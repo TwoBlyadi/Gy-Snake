@@ -172,6 +172,7 @@ int main() {
     Sprite name = Sprite("game_name.png");
     Sprite wall = Sprite("wall.png");
     Sprite button_start = Sprite("button_start.png");
+    Sprite button_exit = Sprite("button_exit.png");
 
     while (!WindowShouldClose()) {
         if(start==true)
@@ -208,10 +209,11 @@ int main() {
             BeginDrawing();
             ClearBackground(Retro1);
 
-            name.Draw(225,75);
+            name.Draw(225,65);
             wall.Draw(75,0);
             wall.Draw(750+45,0);
-            button_start.Draw(250,350);
+            button_start.Draw(260,400);
+            button_exit.Draw(370,530);
 
             EndDrawing();
             
